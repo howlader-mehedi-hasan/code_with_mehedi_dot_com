@@ -1,0 +1,323 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    border-radius: 10px;
+    color: rgb(255, 255, 255);
+
+}
+
+a {
+    text-decoration: none;
+}
+
+body {
+    background: rgb(68, 68, 68);
+}
+
+.background {
+    border: 3px solid aqua;
+    background-color: ;
+    padding: auto;
+    margin: 0px;
+}
+
+.navigation_bar {
+    padding: auto;
+    /* border: 1px solid #ba7e7e; */
+    display: grid;
+    grid-template-columns: 150px auto 230px;
+}
+
+.navigation_bar div {
+    /* border: 2px solid violet; */
+    padding: 5px;
+    margin: 7px;
+}
+
+.nav_left {
+    margin: 20px;
+    padding: 20px;
+}
+
+.nav_middle ul {
+    float: right;
+    /* border: 1px solid seagreen; */
+}
+
+.nav_middle ul li {
+    float: left;
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    margin: 3px;
+    /* padding: 5px; */
+}
+
+.nav_middle ul li a {
+    border: 1px solid seagreen;
+    text-decoration: none;
+    padding: 10px;
+}
+
+.nav_middle ul li a:hover {
+    border: 1px solid white;
+    background-color: #62d5ff;
+    /* color: #000000; */
+    transition-duration: 0.5s;
+
+}
+
+
+/* end of top middle buttons */
+/* start of top right buttons */
+.nav_right ul {
+    float: right;
+}
+
+.nav_right ul li {
+    float: left;
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    margin: 3px;
+    /* margin-top: 10px;
+    margin-bottom: 10px; */
+    background-color: blueviolet;
+}
+
+.nav_right ul li a:hover {
+    border: 1px solid white;
+    background-color: rgb(47, 13, 78);
+}
+
+.dark a {
+    background-color: rgb(85, 85, 85);
+}
+
+.dark a::after {
+    content: "Dark";
+
+}
+
+.dark a:hover {
+    background-color: rgb(255, 255, 255);
+    color: black;
+}
+
+/* .dark a:hover::before{
+    content: "Dark";
+} */
+.dark a:hover::after {
+    background-color: rgb(255, 255, 255);
+    content: "Light";
+}
+
+.nav_right ul li a {
+    border: 1px solid seagreen;
+    text-decoration: none;
+    color: aliceblue;
+    padding: 10px;
+}
+
+/* end of top right buttons */
+
+
+
+
+
+/* css for menu */
+.menu {
+    display: flex;
+    justify-content: center;
+}
+
+.menu ul {
+    /* border: 1px solid rgb(255, 255, 255);   */
+    display: flex;
+}
+
+.menu li {
+    /* border: 1px solid rgb(255, 255, 255);   */
+    margin: 4px;
+    padding: 4px;
+    list-style: none;
+}
+
+.menu li a:hover {
+    border-bottom: 3px solid red;
+    border-radius: 0%;
+    transition-duration: 0s;
+}
+
+.menu a {
+    color: rgb(255, 255, 255);
+}
+
+input {
+    color: black;
+    padding: 5px;
+}
+
+button {
+    padding: 5px;
+    color: black;
+}
+
+.intro {
+    /* border: 1px solid rgb(255, 255, 255);   */
+    display: flex;
+
+}
+
+:root {
+    --mar: 5%;
+    --space: 2%;
+}
+
+.intro .text {
+    /* border: 1px solid rgb(255, 255, 255); */
+    margin-top: var(--mar);
+    margin-bottom: var(--mar);
+    margin-left: var(--mar);
+    margin-right: var(--space);
+    padding: 3%;
+    width: 44%;
+    height: auto;
+    background-color: rgb(94, 94, 94);
+
+
+}
+
+.l1 {
+    display: flex;
+
+}
+
+.intro .image {
+    /* border: 1px solid rgb(255, 255, 255); */
+    margin-top: var(--mar);
+    margin-bottom: var(--mar);
+    margin-right: var(--mar);
+    margin-left: var(--space);
+
+    width: 50%;
+    height: 250px;
+
+
+}
+
+.intro img {
+    width: 100%;
+    height: 100%;
+
+}
+
+.intro .color {
+    color: aqua;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+span button {
+    margin: 1px;
+    padding: 13px;
+    cursor: pointer;
+}
+
+.recomend {
+    margin-top: 0px;
+    padding: 0px;
+    text-align: center;
+    font-size: 25px;
+}
+
+.courses {
+    justify-content: center;
+    display: grid;
+    /* grid-template-rows: 1fr 1fr 1fr; */
+    grid-template-columns: 1fr 1fr 1fr;
+    /* border: 1px solid rgb(255, 255, 255); */
+    padding: 20px;
+}
+
+.courses .item {
+    border: 1px solid rgb(255, 255, 255);
+    margin: 20px;
+    padding: 20px;
+    text-align: center;
+}
+
+button {
+    margin: 5px;
+    padding: 9px;
+}
+
+.cotation {
+    font-size: 100px;
+}
+
+.cotation h2,
+h3,
+h5 {
+    text-align: right;
+}
+
+.testimonials {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.testimonials .text {
+    /* border: 1px solid rgb(255, 255, 255); */
+    margin: 5%;
+    padding: 3%;
+    width: auto;
+    height: auto;
+    background-color: rgb(94, 94, 94);
+}
+
+.footer {
+    border: 1px solid rgb(255, 255, 255);
+    margin: 10px;
+    padding: 15px;
+    font-size: 20px;
+    display: flex;
+}
+
+.footer img {
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    border: 2px solid red;
+}
+
+.footer h2 {
+    margin: 10px;
+}
+
+.footer h4 {
+    margin: 12.5px;
+}
+
+.footer .left,
+.right {
+    /* border: 1px solid rgb(255, 255, 255); */
+    /* padding: 12.5px;
+    margin: 5px;  */
+    width: 50%;
+    display: flex;
+}
+
+.footer .right {
+    display: flex;
+    justify-content: right;
+}
+
+.footer .right div {
+    border: 1px solid rgb(255, 255, 255);
+    padding: 12.5px;
+    margin: 5px;
+    /* width: 50%; */
+    display: flex;
+    /* justify-content: right; */
+}
